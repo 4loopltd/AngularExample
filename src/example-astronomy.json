@@ -1,0 +1,118 @@
+{
+  "astronomy": {
+    "astronomy": [
+      {
+        "sunrise": "6:56AM",
+        "sunset": "5:32PM",
+        "moonrise": "7:46AM",
+        "moonset": "6:20PM",
+        "moonPhase": 0.003,
+        "moonPhaseDesc": "New moon",
+        "iconName": "cw_new_moon",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-02-24T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:54AM",
+        "sunset": "5:34PM",
+        "moonrise": "8:04AM",
+        "moonset": "7:27PM",
+        "moonPhase": 0.018,
+        "moonPhaseDesc": "New moon",
+        "iconName": "cw_new_moon",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-02-25T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:52AM",
+        "sunset": "5:36PM",
+        "moonrise": "8:21AM",
+        "moonset": "8:32PM",
+        "moonPhase": 0.051,
+        "moonPhaseDesc": "Waxing crescent",
+        "iconName": "cw_waxing_crescent",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-02-26T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:50AM",
+        "sunset": "5:37PM",
+        "moonrise": "8:38AM",
+        "moonset": "9:38PM",
+        "moonPhase": 0.100,
+        "moonPhaseDesc": "Waxing crescent",
+        "iconName": "cw_waxing_crescent",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-02-27T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:48AM",
+        "sunset": "5:39PM",
+        "moonrise": "8:55AM",
+        "moonset": "10:43PM",
+        "moonPhase": 0.163,
+        "moonPhaseDesc": "Waxing crescent",
+        "iconName": "cw_waxing_crescent",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-02-28T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:46AM",
+        "sunset": "5:41PM",
+        "moonrise": "9:14AM",
+        "moonset": "11:51PM",
+        "moonPhase": 0.238,
+        "moonPhaseDesc": "Waxing crescent",
+        "iconName": "cw_waxing_crescent",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-02-29T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:44AM",
+        "sunset": "5:43PM",
+        "moonrise": "9:36AM",
+        "moonset": "*",
+        "moonPhase": 0.324,
+        "moonPhaseDesc": "Waxing crescent",
+        "iconName": "cw_waxing_crescent",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-03-01T00:00:00.000Z"
+      },
+      {
+        "sunrise": "6:42AM",
+        "sunset": "5:44PM",
+        "moonrise": "10:03AM",
+        "moonset": "12:58AM",
+        "moonPhase": 0.418,
+        "moonPhaseDesc": "First Quarter",
+        "iconName": "cw_first_qtr",
+        "city": "Portslade",
+        "latitude": 50.84,
+        "longitude": -0.22,
+        "utcTime": "2020-03-02T00:00:00.000Z"
+      }
+    ],
+    "country": "United Kingdom",
+    "state": "England",
+    "city": "Portslade-by-Sea",
+    "latitude": 50.83194,
+    "longitude": -0.21215,
+    "timezone": 0
+  },
+  "feedCreation": "2020-02-24T15:42:00.444Z",
+  "metric": true
+}

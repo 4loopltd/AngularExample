@@ -1,0 +1,47 @@
+
+.container{
+  padding: 1rem 1rem 0 1rem;
+  flex: 1;
+}
+
+.content{
+  display: flex;
+  flex-flow: column;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: auto;
+}
+
+@media screen and (max-width: 599px) {
+  .mat-form-field {
+    min-width: 70%;
+    max-width: 79%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .mat-form-field {
+    min-width: 44%;
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .mat-form-field {
+    min-width: 26%;
+    max-width: 91%;
+  }
+}
+
+.msg-error{
+  color: red;
+  font-style: oblique;
+}
+
+p{
+  margin: 0 0 0.25rem;
+}

@@ -1,0 +1,58 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <mat-nav-list>
+      <a mat-list-item>
+        <form [formGroup]="themeForm" novalidate>
+          <div>
+            <mat-slide-toggle formControlName="enable" [checked]="enable" (change)="onChange($event.checked)">Dark
+            </mat-slide-toggle>
+          </div>
+        </form>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div fxHide.gt-xs>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div>
+        <p>Weather</p>
+      </div>
+      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+          <li>
+            <a>
+              <form [formGroup]="themeForm" novalidate>
+                <div>
+                  <mat-slide-toggle formControlName="enable" [checked]="enable" (change)="onChange($event.checked)">
+                    Dark
+                  </mat-slide-toggle>
+                </div>
+              </form>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar>
+
+    <main class="content">
+      <app-location></app-location>
+      <app-forecast></app-forecast>
+      <app-astronomy></app-astronomy>
+    </main>
+
+    <footer class="footer">
+      <div style="color: white;">
+        <p>Designed by <a id="loop" href="https://www.4loop.co.uk" target="_blank">4Loop.co.uk</a></p>
+        <p>&copy;2020 4Loop Ltd. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
