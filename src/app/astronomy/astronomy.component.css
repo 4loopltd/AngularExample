@@ -1,0 +1,52 @@
+
+.container{
+  padding: 0.5rem 1rem 1rem 1rem;
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media screen and (max-width: 599px) {
+  .row-header {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .row-header {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .row-header {
+    width: 12%;
+  }
+}
+
+.item + .item {
+  margin-left: 5%;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: auto;
+}
+
+.mat-card-header {
+  margin-bottom: 1rem;
+}
+
+.mat-spinner {
+  margin-top: 10%;
+  margin-left: 45%;
+}
+
+p{
+  margin: 0 0 0.25rem;
+}

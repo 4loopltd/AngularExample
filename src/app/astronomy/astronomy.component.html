@@ -1,0 +1,46 @@
+<div class="container">
+
+  <div class="content" *ngIf="data.moonPhaseDesc">
+    <mat-card class="mat-card">
+      <mat-card-title>
+        <p><span>Astronomy</span></p>
+      </mat-card-title>
+
+      <mat-card-content>
+        <strong *ngIf="data.moonPhaseDesc">{{ data.moonPhaseDesc }}</strong>
+        <div class="content">
+          <div class="item row-header">
+            <label>Sunrise</label>
+          </div>
+          <div class="item">
+            <em>{{ data.sunrise }}</em>
+          </div>
+        </div>
+        <div class="content">
+          <div class="item row-header">
+            <label>Sunset</label>
+          </div>
+          <div class="item">
+            <em>{{ data.sunset }}</em>
+          </div>
+        </div>
+        <div class="content">
+          <div class="item row-header">
+            <label>Moonrise</label>
+          </div>
+          <div class="item">
+            <em>{{ data.moonrise }}</em>
+          </div>
+        </div>
+        <div class="content">
+          <div class="item row-header">
+            <label>Moonset</label>
+          </div>
+          <div class="item">
+            <em>{{ data.moonset }}</em>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

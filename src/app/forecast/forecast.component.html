@@ -1,0 +1,108 @@
+<div class="container">
+
+  <div class="content" *ngIf="!data.dailyForecasts">
+    <mat-spinner class="mat-spinner"></mat-spinner>
+  </div>
+
+  <div class="content" *ngIf="data.dailyForecasts">
+    <mat-card class="mat-card" *ngFor="let forecast of data.dailyForecasts.forecastLocation.forecast">
+
+      <mat-card-header class="mat-card-header">
+        <img mat-card-avatar alt="weather icon"
+             [src]="forecast.iconLink+'?apiKey=' + 'INSERT_YOUR_KEY_HERE'"/>
+        <mat-card-title>{{ forecast.utcTime | daySuffix }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content fxHide fxShow.xs>
+        <div class="content">
+          <div class="item">
+            <div>
+              <strong>{{ forecast.temperatureDesc }} {{ forecast.airDescription }}</strong>
+            </div>
+            <div class="row-header">
+              <label>Temperature</label>
+            </div>
+            <div>
+              <em *ngIf="data.metric == true">{{ forecast.highTemperature | number : '1.1' }}</em>
+              <em *ngIf="data.metric==false">{{ forecast.highTemperature | fahrenheit }}</em>
+              <em> - </em>
+              <em *ngIf="data.metric == true">{{ forecast.lowTemperature | number : '1.1' }}</em>
+              <em *ngIf="data.metric==false">{{ forecast.lowTemperature | fahrenheit }}</em>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <strong *ngIf="!forecast.precipitationDesc">Clear</strong>
+              <strong *ngIf="forecast.precipitationDesc">{{ forecast.precipitationDesc }}</strong>
+            </div>
+            <div class="row-header">
+              <label>Probability</label>
+            </div>
+            <div>
+              <em>{{ forecast.precipitationProbability }}%</em>
+            </div>
+          </div>
+          <div class="item">
+          <div>
+            <strong *ngIf="forecast.windDesc">{{ forecast.windDesc }}</strong>
+          </div>
+          <div class="row-header">
+            <label>Wind Speed</label>
+          </div>
+          <div>
+            <em>{{ forecast.windSpeed | kphToMph}}mph</em>
+          </div>
+        </div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-content fxHide fxShow.gt-xs>
+        <strong>{{ forecast.temperatureDesc }} {{ forecast.airDescription }}</strong>
+        <div class="content">
+          <div class="item row-header">
+            <label>Temperature</label>
+          </div>
+          <div class="item">
+            <em *ngIf="data.metric == true">{{ forecast.highTemperature | number : '1.1' }}</em>
+            <em *ngIf="data.metric==false">{{ forecast.highTemperature | fahrenheit }}</em>
+          </div>
+          <div class="item"><p>-</p></div>
+          <div class="item">
+            <em *ngIf="data.metric == true">{{ forecast.lowTemperature | number : '1.1' }}</em>
+            <em *ngIf="data.metric==false">{{ forecast.lowTemperature | fahrenheit }}</em>
+          </div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-content fxHide fxShow.gt-xs>
+        <strong *ngIf="!forecast.precipitationDesc">Clear</strong>
+        <strong *ngIf="forecast.precipitationDesc">{{ forecast.precipitationDesc }}</strong>
+        <div class="content">
+          <div class="item row-header">
+            <label>Probability</label>
+          </div>
+          <div class="item">
+            <em>{{ forecast.precipitationProbability }}%</em>
+          </div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-content fxHide fxShow.gt-xs>
+        <strong *ngIf="forecast.windDesc">{{ forecast.windDesc }}</strong>
+        <div class="content">
+          <div class="item row-header">
+            <label>Wind Speed</label>
+          </div>
+          <div class="item">
+            <em>{{ forecast.windSpeed | kphToMph}}mph</em>
+          </div>
+        </div>
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+</div>
+
+
+
+
